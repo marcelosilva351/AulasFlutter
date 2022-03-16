@@ -2,10 +2,11 @@
 import 'cliente.dart';
 
 class Conta{
-  String numero;
+  double numero;
   double saldo;
-  Cliente proprietario;
-
-  Conta(this.numero,this.saldo,this.proprietario);
+  String proprietario;
+  
+  //Contrutor que o flutter usa
+  Conta({required this.numero,required this.saldo,required this.proprietario});
   
 }

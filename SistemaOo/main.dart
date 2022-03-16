@@ -10,8 +10,9 @@ void main(){
 
   var cliente1 = Cliente('Marcelo', '03789214108');
 
-  var contaCliente1 = Conta('1392103', 0.0, cliente1);
-
+  var contaCliente1 = Conta(numero: '20303102', proprietario: cliente1, saldo: 1000);
+  
+   
   print('Saldo antes de depositar ' + contaCliente1.saldo.toString());
   controller.AdicionarSaldo(contaCliente1, 900000);
 
