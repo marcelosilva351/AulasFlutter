@@ -7,8 +7,6 @@ class HomePage extends StatefulWidget {
   @override
   State<HomePage> createState() => _HomePageState();
 }
-
-
 class _HomePageState extends State<HomePage> {
   var homeController = HomeController();
 
@@ -56,12 +54,8 @@ class _HomePageState extends State<HomePage> {
             homeController.calculoImc();
           }, child: Text('Calcular')),
           const SizedBox(height: 10,),
-          Text(homeController.resultImc)
-
-
-
-        
-        ],
+          Text(homeController.resultImc)    
+         ],
       )
       ,),
       
